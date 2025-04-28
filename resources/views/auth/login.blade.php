@@ -12,9 +12,6 @@
     <div class="login-box">
         <h2>Увійти</h2>
 
-        <!-- Виведення статусу сесії -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
-
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
